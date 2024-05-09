@@ -63,4 +63,47 @@
 - You cannot modify the trust policy of a service-linked role
 - For billing purposes, the consolidated billing feature of AWS Organizations treats all the accounts in the organization as one account
 - AWS does not recommend to attach the SCPs at root level
-
+- Multi-account, multi-region data aggregation in AWS Config enables you to aggregate AWS Config data from multiple accounts and regions into a single account.
+- An aggregator is a new resource type in AWS Config that collects AWS Config data from multiple source accounts and regions. Create an aggregator in the Region where you want to see the aggregated AWS Config data. While creating an aggregator, you can choose to add either individual account IDs or your organization.
+- Amazon Inspector is used as an automated vulnerability management service that continually scans AWS workloads for software vulnerabilities
+- With Amazon Aurora global Database, you can promote one of the secondary Regions to the primary role to take full read/write workloads in under a minute
+- You can create CNAME records only for subdomains
+- The source database remains fully operational during the migration, minimizing downtime to applications that rely on the database.
+- CloudFront a son propre mécanisme de géorestriction IP
+- Traffic miroring peut être setup au niveau de l'ENI
+- Cloudwatch Tail - équivalent du tail -f dans un OS
+- DMS allows to migrate from relational database to Dynamodb
+- Cloudwatch Metric filters - Permet de convertir un string pattern dans les logs en une metric (à mettre derrière une alarme par exemple)
+- AWS Global tables : multi master (multi writes possible) 
+- AWS SAM is an extension of AWS CloudFormation
+- AWS SCT can be used on-prem to prepare data to be injected to S3 or snowball edge
+- ECS task - possibility to pass ARN of parameter store or secret in secretsmanager to pass sensitive secret
+- Redshift do not provide real-time data analytics
+- AWS Config allows to track changes to WAF
+- AWS Firewall Manager is primarily used to manage your Firewall across multiple AWS accounts under your AWS Organizations
+- CodeCommit - can configure for code pushes or other events trigger actions, such as SNS or invoking a function in AWS Lambda
+- AWS Fargate only supports the “awsvpc” network mode
+- You can enable API caching in Amazon API Gateway to cache your endpoint’s responses (default ttl : 300sec, max 3600sec)
+- DynamoDB Accelerator can be expensive (careful on COST related question)
+- Amazon Cognito identity pools provide temporary AWS credentials for users who are guests (unauthenticated) and for users who have been authenticated and have received a token.
+- IAM Identity Center supports single sign-on to business applications through web browsers only
+- AWS IAM Identity Center supports only SAML 2.0–based applications
+- Amazon Cognito Identity Pool will provide temporary tokens to federated users for accessing AWS resources
+- Cloudfront - multiple origins with failover possible (origin group with two origins with one as the primary origin and the other as the second origin which CloudFront automatically switches to when the primary origin fails)
+- SQS Dead-letter queues : debugging your application or messaging system - let you isolate unconsumed messages to determine why their processing doesn’t succeed.
+- sqs delivery delay : delay before a consumer of the queue can access the message
+- Cloudfront field-level encryption intercepts the form POST and encrypts sensitive data with the public RSA key and replaces fields in the form post with encrypted ciphertext. The form POST ciphertext is then sent to origin servers.
+- Cloudfront : The shorter the cache duration, the more frequently CloudFront forwards another request to your origin to determine whether the object has changed and, if so, to get the latest version.
+- After you configure a bucket to be a Requester Pays bucket, requesters must include x-amz-request-payer in their requests either in the header, for POST, GET and HEAD requests, or as a parameter in a REST request to show that they understand that they will be charged for the request and the data download.
+-  Amazon Fraud Detector uses machine learning that automates the detection of potentially fraudulent activities online
+- RedShift is not applicable to OLTP but rather with OLAP.
+- With API Gateway, you can send the stream to an Amazon Kinesis data stream on which you can group requests in batches so there will be a decrease in requests in Lambda.
+Geoproximity vs Geolocation WTF
+- AWS Migration Hub (Migration Hub) provides a single place to discover your existing servers, plan migrations, and track the status of each application migration. ( AWS discovery service is part of this service )
+-  Application Load Balancer cannot serve traffic to EC2 instances on a different region even with Inter-Region VPC peering
+Cloufront can target API Gateway?
+- You can use CRR to change account ownership for the replicated objects to protect data from accidental deletion.
+- AWS Backup supports continuous backups and point-in-time recovery (PITR) in addition to snapshot backups.
+- AWS Backup continuous backups - works by first creating a full backup of your resource and then constantly backing up your resource’s transaction logs - 1sec restauration precision - up to 35 days in the past
+- Timestream services do not have the capacity to analyze real-time streaming data
+- CHAP is primarily used to authenticate iSCSI 
