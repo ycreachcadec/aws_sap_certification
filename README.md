@@ -106,4 +106,49 @@ Cloufront can target API Gateway?
 - AWS Backup supports continuous backups and point-in-time recovery (PITR) in addition to snapshot backups.
 - AWS Backup continuous backups - works by first creating a full backup of your resource and then constantly backing up your resource’s transaction logs - 1sec restauration precision - up to 35 days in the past
 - Timestream services do not have the capacity to analyze real-time streaming data
-- CHAP is primarily used to authenticate iSCSI 
+- CHAP is primarily used to authenticate iSCSI
+- API Gateway WebSocket APIs are bidirectional. A client can send messages to a specific service, and services can independently send messages to clients
+- AWS IoT Greengrass enables your devices to collect and analyze data closer to where that data is generated, react autonomously to local events, and communicate securely with other devices on the local network
+- Route53 - multivalue answer routing also lets you check the health of each resource, so Route 53 returns only value for healthy resources
+- For transferring small files to Snowball edge, AWS recommends transferring in batches. Each copy operation has some overhead because of encryption. To speed up the process of transferring small files to your AWS Snowball Edge device, you can batch them together in a single archive. (auto-extracted when they are imported into Amazon S3)
+- NLB + EIP - Maximum 1 EIP / AZ
+- Amazon Transcribe is an AWS service that makes it easy for customers to convert speech to text.
+- AWS IQ is a freelancing platform that provides hands-on help from AWS experts
+- Amazon AppFlow : sync SaaS applications like Salesforce, SAP, Zendesk, Slack, and ServiceNow, and AWS services
+- Amazon SageMaker build and train machine learning models
+- Amazon SageMaker : integrated Jupyter notebook instance
+- AWS Proton : A managed delivery service for deploying container and serverless applications
+- Conditional forwarder = conf DNS AD pas route53 - équivalent avec AWS outbound resolver : forwarding rule
+- Import a certificate from a third-party certificate authority into ACM or the IAM certificate store
+- OpenSearch : un fork d'Elasticsearch et de Kibana
+- ACM : you can generate public or private SSL/TLS certificates that you can use to secure your site.
+- Amazon RDS database does not support Oracle RAC
+- You can attach all your hybrid connectivity (VPN and Direct Connect connections) to a single Transit Gateway
+- Transit Gateway enables customers to connect thousands of VPCs
+- Transit Gateways within an AWS Region cannot be peered
+- The default limit for shared VPC subnets is 100
+- There is a default limit of 50 VPC peering for each VPC
+- Lambda - In a single account with the default concurrency limit of 1000 concurrent execution
+- Amazon Translate is  a text translation service that uses machine learning to provide translation on demand (Amazon Translate != Amazon Transcribe)
+- dynamic website and not static - Client can POST or PUT 
+- If your workloads require fast, POSIX-compliant file system access to your S3 buckets => FSx for Lustre to link your S3 buckets to a file system and keep data synchronized between the file system and S3 in both directions
+- A multi-attached EBS volume can only be attached in 16 EC2 instances simultaneously
+- AWS Config provides AWS managed rules, which are predefined, customizable rules
+- An Aurora cluster can recover in less than 1 minute even in the event of a complete regional outage
+- MySQL promote read replica in another region - non automatisé + necessite reboot de la RDS
+- Amazon EMR -> spot on task nodes reste quelque chose de high available
+- Direct Connect require a network device in data center on-prem that supports Border Gateway Protocol (BGP) and BGP MD5 authentication
+- A Throughput Optimized EBS volume cannot be shared between EC2 instances
+- The Amazon EBS Multi-Attach feature is only applicable for Provisioned IOPS SSD volumes.
+- API Gateway : Resource policies let you create resource-based policies to allow or deny access to your APIs and methods from specified source IP addresses or VPC endpoints
+- Possibilité depuis la console Cost de creer des generated tags ajoutés automatiquement aux ressources (depuis le compte master d'une orga) 
+- AWS Tag Editor is a feature that allows you to add, edit, or remove tags from your AWS resources
+- Amazon Lightsail is a cost-effective solution for deploying simple web applications. AWS recommends it for DEV/Test environments only
+- You can’t use a self-signed certificate for HTTPS communication between CloudFront and your origin.
+- Jupyter notebooks are primarily used to prepare your data and write code to train models. 
+- Most of the time, you need to set up a custom Kinesis Video Streams Producer client in order to send data to a Kinesis Video Stream
+- AWS SFTP -> S3 est possible (aws recommande https plutôt que sftp)
+- Redshift - solution native de copy de snapshot cross region ( définir une clé KMS de la région destination si donnée chiffrée avec KMS )
+- Rolling updates enable you to specify whether AWS CloudFormation updates instances that are in an Auto Scaling group 
+- VPC flow log data only contain OSI Layer 4 (Transport) information.
+- ALB access logs only contains the request path and some headers on the logs. The payload itself, not the payload
