@@ -152,3 +152,68 @@ Cloufront can target API Gateway?
 - Rolling updates enable you to specify whether AWS CloudFormation updates instances that are in an Auto Scaling group 
 - VPC flow log data only contain OSI Layer 4 (Transport) information.
 - ALB access logs only contains the request path and some headers on the logs. The payload itself, not the payload
+- CloudFront is case-sensitive when caching objects. There is no "case-insensitive" option in CloudFront.
+- Cloudtrail logs to S3 -> SSE-S3 ou SSE-KMS
+- AWS AppSync service is a fully managed service for developing GraphQL APIs
+- AWS Storage Gateway offers file-based file gateways (Amazon S3 File and Amazon FSx File)
+- You need to enable “All features” on the AWS Organization to be able to create and apply SCP for each subsidiary.
+- Organization : la création du role OrganizationAccountAccessRole  n'est pas automatique
+- Amazon WorkSpaces secure Desktop-as-a-Service (DaaS)
+- AWS Application Migration Service is a migration tool, it is used to replicate or mirror your on-premises VMs to the AWS cloud. 
+- S3DistCp tool is used to copy large amounts of data from Amazon S3 into HDFS.
+- Amazon Data Lifecycle Manager (DLM) for EBS Snapshots provides a simple, automated way to back up data stored on Amazon EBS volumes. You can define backup and retention schedules for EBS snapshots by creating lifecycle policies based on tags. With this feature, you no longer have to rely on custom scripts to create and manage your backups.
+- AWS SSM Automation compatible avec event bridge cron 
+- Enabling object versioning on S3 does not invalidate presigned URL
+- one virtual private gateway (VGW) can be attached to a VPC at a time.
+- AWS IoT rules to route data from your connected things. A rule includes one or more actions that AWS IoT performs when enacting the rule. For example, you can insert data into a DynamoDB table, write data to an Amazon S3 bucket, publish to an Amazon SNS topic, or invoke a Lambda function.
+- If you configure CloudFront to serve HTTPS requests using SNI, CloudFront associates your alternate domain name with an IP address for each edge location. The IP address to your domain name is determined during the SSL/TLS handshake negotiation and isn’t dedicated to your distribution.
+- By default, an SCP named FullAWSAccess is attached to every root, OU, and account.
+- Aurora : automated backups only occur once every day during the defined backup window. You can’t configure it to run every 5 minutes.
+- Amazon MQ is a managed message broker service that provides compatibility with many popular message brokers. AWS recommends Amazon MQ for migrating applications from existing message brokers that rely on compatibility with APIs such as JMS or protocols such as AMQP, MQTT, OpenWire, and STOMP.
+- An Oracle Real Application Clusters (RAC) One Node option provides virtualized servers on a single machine. This provides an ‘always on’ availability for single-instance databases for a fraction of a cost.
+- Amazon FSx for Windows server does not have option to Dynamically Allocate the file system size
+- AWS IoT Core is a managed cloud service that enables connected devices to securely interact with cloud applications and other devices.
+- With AWS IoT Core, your applications can interact with all your devices even when disconnected.
+- AWS CodeBuild is a fully managed build service in the cloud. CodeBuild compiles your source code, runs unit tests, and produces artifacts that are ready to deploy.
+- Amazon EFS uses the NFS protocol which is primarily used by Linux AMIs. This filesystem does not support Windows ACLs.
+- Amazon FSx for Lustre is POSIX-compliant file system that runs on Lustre. It can only be used by Linux-based instances.
+- Amazon Kinesis Data Stream: You can make your streaming data available to multiple real-time analytics applications, to Amazon S3, or to AWS Lambda within 70 milliseconds of the data being collected.
+- Kinesis Client Library (KCL) : For custom consumers -> take care of many of the complex tasks associated with distributed computing. (load balancing across multiple consumer application instances, responding to failures, reacting to resharding...)
+- You can’t use Amazon Quicksight to query data lakes from AWS Lake Formation. 
+- API Gateway peut s'intégrer avec SQS (anti pattern lors d'usage real time, les messages n'étant pas traités dans l'ordre)
+- Amazon EMR clusters can read and process Amazon Kinesis streams directly
+- Dynamodb supports document stores such as JSON, XML, or HTML in these data types.
+- DocumentDb does not offer a native cross-region replication or multi-region operation. You can only automate snapshots to another region which can take some time to restore in the event of regional failure.
+- s3  there is a delay of up to 15 minutes in Cross-Region Replication.
+- Amazon S3 will reject any requests made over HTTP when using SSE-C.
+- PowerUserAccess permet de creer des service link roles
+- Import de CMK dans KMS gen dans on-prem HSM : prerequis: creer dans KMS CMK with no key materials and EXTERNAL origin
+- S3 bucket policy : aws:SourceIp n'est valable que pour les IP publiques 
+- EFS has file locking capabilities, it does not have file versioning features.
+- Amazon EventBridge cannot directly invoke AWS Fargate tasks.
+- AWS Step Function can be trigger for Amazon EventBridge
+- AWS Audit Manager is used to map compliance requirements to AWS usage data with prebuilt and custom frameworks and automated evidence collection
+- AWS Step Functions offers built-in mechanisms for error handling and retry policies, which are essential for managing failures in any of the workflow steps.
+- Migration Evaluator (formerly TSO Logic) is a migration assessment service that customers can request a business case from when considering to move on-premise workloads to the cloud. The service helps identify the least expensive deployment and purchasing options and helps predict future-state cloud costs.
+- AWS Trusted Advisor is primarily used to check if your cloud infrastructure is in compliance with the best practices and recommendations across five categories: cost optimization, security, fault tolerance, performance, and service limits
+- AWS VPN CloudHub allows to connect your on-premises network to multiple VPCs in different AWS Regions using a central hub configuration.
+- AWS Application Migration Service (MGN) is a highly automated lift-and-shift (rehost) solution 
+- By default, the burst concurrency for Lambda functions is between 500-3000 requests per second (depending on region)
+- AWS Amplify Console offers a simple Git-based workflow for building and deploying static web apps to AWS. 
+- Alexa for Business gives you the tools you need to manage Alexa devices, enroll your users, and assign skills at scale for your organization
+- Amazon Rekognition is used to identify persons on photos or videos
+- OpenSearch is a fully open-source search and analytics engine for use cases such as log analytics, real-time application monitoring, and clickstream analysis.
+- Neptune DB is designed for graph application and loading CSV formatted data.
+- Amazon Kinesis Data Firehose has a feature to buffer data and supports data transformation in near-real-time.
+- Amazon Kinesis Data Stream offer longer-term, durable storage
+- You cannot set Auto Scaling for the master database on Amazon Aurora. You can only manually resize the instance size of the master node.
+- Aurora : scaling sur les replicas uniquement
+- Amazon Aurora does not need to replay the redo log from the last database checkpoint (typically five minutes) so restart is very fast
+- Amazon RDS Proxy instance maintains a pool of established connections to your RDS database instances, reducing the stress on database compute and memory resources that typically occurs when new connections are established.
+- With RDS Proxy, you can build applications that can transparently tolerate database failures without needing to write complex failure-handling code. The proxy automatically routes traffic to a new database instance while preserving application connections. It also bypasses Domain Name System (DNS) caches to reduce failover times by up to 66% for Aurora Multi-AZ databases
+- Optimized Reads and Optimized Writes exists in Amazon RDS
+- You can use Glacier Select to perform filtering operations using simple Structured Query Language (SQL).
+- ASG porte une fonction "Scheduled scaling" intégrée 
+- AWS Application Migration Service (MGN) is a highly automated lift-and-shift (rehost) solution
+- Amazon Redshift only has cross-region backup feature (using snapshots), not Cross-Region Replication. Redshift can't replicate to another Redshift cluster 
+- There are a lot of features in IBM MQ that are not available in Amazon SQS
