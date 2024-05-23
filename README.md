@@ -217,3 +217,39 @@ Cloufront can target API Gateway?
 - AWS Application Migration Service (MGN) is a highly automated lift-and-shift (rehost) solution
 - Amazon Redshift only has cross-region backup feature (using snapshots), not Cross-Region Replication. Redshift can't replicate to another Redshift cluster 
 - There are a lot of features in IBM MQ that are not available in Amazon SQS
+---
+- AWS Batch is designed to easily and efficiently run hundreds of thousands of batch computing jobs on AWS but not with Lambda functions.
+- By reserving your read and write capacity units ahead of time, you realize significant cost savings compared to on-demand provisioned throughput settings
+- AppSync supports real-time chat applications
+- With managed GraphQL subscriptions, AWS AppSync can push real-time data updates over Websockets to millions of clients. 
+- It is possible to write TypeScript or Python code that will define AWS resources. Convert these codes to AWS CloudFormation templates by using AWS Cloud Development Kit (AWS CDK)
+- Consided billing - only work if both accounts match the same AZ
+- EC2Rescue can help you diagnose and troubleshoot problems on Amazon EC2 Linux and Windows Server instances.
+- It is possible to configure the database tier to use sharding, which will distribute the incoming load to multiple RDS MySQL instances.
+- An Internet gateway is not required to establish a hardware VPN connection.
+- AWS AppSync is recommended for applications that are written for GraphQL APIs, not REST APIs.
+- Amazon API gateway - possibility to switch from regional to edge endpoints ( improve performances )
+- Amazon S3 Transfer Acceleration on the S3 bucket permet d'accélérer les uploads
+- When using AWS Lambda, initializing the database connection outside the event handler leverages Lambda’s ability to reuse containers for multiple invocation
+- Consider using least outstanding requests (LOR) when the requests for your application vary in complexity or your targets vary in processing capability
+- is not possible to update the deployment type of the FSx file system once it is created.
+- Amazon FSx can be mono or multi AZ
+- if you want to sync an SMB to the AWS cloud. AWS DataSync offers a managed service that is designed for copying data from SMB shares to AWS
+- Apache Parquet is an open-source file format that is optimized for use with big data processing frameworks. It stores data in a columnar format, which means it organizes the data by columns rather than by rows. This can lead to significant performance improvements when executing analytical queries.
+-  AWS Glue is a fully managed extract, transform, and load (ETL) service that makes it easy to prepare and load your data for analytics
+- RAM can share TGW
+- AWS AppSync ne s'intègre pas directement à Lambda
+- S3 Replication Time Control (S3 RTC) helps you meet compliance or business requirements for data replication and provides visibility into Amazon S3 replication times
+- S3 RTC replicates most objects that you upload to Amazon S3 in seconds and 99.99 percent of those objects within 15 minutes.
+- S3 replication can sometimes take a couple of hours.
+- AWS Elemental MediaConvert is a new file-based video transcoding service aimed to replace Amazon Elastic Transcoder.
+- AWS Budgets can be cross account using organization
+- Glue crawlers are automated data discovery tools that scan a data source to classify, group, and catalog the data within it automatically.
+-  Lambda functions do not, and cannot, have public IP addresses. 
+- GW load balancer -> TG -> ASG est une archi possible 
+- Amazon WorkSpaces allows you to control which IP addresses your WorkSpaces can be accessed from
+- Route 53 health check can uses Amazon SNS to invoke the Lambda function in case of any issues
+- you can configure CloudFront to return a custom error page
+- Use origin failover to designate a primary origin for CloudFront plus a second origin that CloudFront automatically switches to when the primary origin returns specific HTTP status code failure responses.
+- You can add a lifecycle hook to your Auto Scaling group so that you can perform custom actions when instances launch or terminate.
+- OpsCenter is more oriented towards incident management rather than an operational activity like capturing logs
