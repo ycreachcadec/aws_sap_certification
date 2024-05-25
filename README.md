@@ -253,3 +253,31 @@ Cloufront can target API Gateway?
 - Use origin failover to designate a primary origin for CloudFront plus a second origin that CloudFront automatically switches to when the primary origin returns specific HTTP status code failure responses.
 - You can add a lifecycle hook to your Auto Scaling group so that you can perform custom actions when instances launch or terminate.
 - OpsCenter is more oriented towards incident management rather than an operational activity like capturing logs
+---
+- RDS Data API is designed to be used for Aurora Serverless service, not for RDS instances. 
+- Cost & Usage Reports can be integrate with Amazon Athena, Redshift et Quicksight
+- AWS Migration Hub helps you understand your IT environment by letting you explore information stored in the AWS Application Discovery Service repository
+- AWS Systems Manager Explorer is a customizable operations dashboard that reports information about your actual AWS resources (e.g., Amazon EC2, Amazon RDS, etc.)
+- AWS Data Pipeline can load data from S3 to RDS
+- AWS DataSync can facilitate the copying of data from on-premises data stores to the AWS cloud, but it can’t be used to replicate an on-premises database to AWS.
+- AWS Well-Architected Tool allows you to monitor the status of multiple workloads across your organization and helps you understand potential risks
+- CodeGuru : code review and performance optimization
+- AWS Trusted Advisor is a service that gives guidance in provisioning resources that follows AWS best practices
+- AWS Compute Optimizer utilisable avec EC2, EBS, task sizes of (ECS) services on AWS Fargate et lambda
+- Amazon Forecast, a service that uses machine learning to generate precise time-series predictions
+- serverless caching, which automatically scales a Redis cluster is possible with ElasticCache
+- AWS Step Functions with Map and Parallel states can indeed help break down tasks into smaller parts
+- Amazon Aurora cloning allows you to create a new cluster that uses the same Aurora cluster volume and has the same data as the original.
+- Amazon Aurora can be share in RAM (for a source/destination in a same region, aurora cloning is faster than snapshot copy)
+- EKS Distro is a Kubernetes distribution built and powered by Amazon EKS managed, allowing you to deploy secure and reliable Kubernetes clusters in any environment. (opensource)
+- Amazon S3 Storage Lens is a cloud-storage analytics feature that you can use to gain organization-wide visibility into object-storage usage and activity.
+-  Storage Class Analysis can help in optimizing storage costs by suggesting what objects to move between storage classes
+- AWS DirectConnect gateway require to set prefix lists
+- AWS Migration Hub, which offers data exploration features integrated with Amazon Athena.
+- S3 Select is simply used to retrieve specific subsets of data from within an S3 object
+- Cloudformation stackset - automatic deployment possible at organization level
+- Security Hub has integration with Organizations, so you can use one single Security Hub dashboard to monitor for both security issues in one place.
+- Audit Manager to automate evidence collection and to provide continuous auditing and compliance.
+- Timestream can be up to a thousand times faster than a relational database.
+-  Timestream can periodically and automatically schedule queries to perform real-time analytics on incoming data.
+-  resource-based policies are not available for DynamoDB tables.
