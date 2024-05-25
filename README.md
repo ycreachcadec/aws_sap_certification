@@ -281,3 +281,28 @@ Cloufront can target API Gateway?
 - Timestream can be up to a thousand times faster than a relational database.
 -  Timestream can periodically and automatically schedule queries to perform real-time analytics on incoming data.
 -  resource-based policies are not available for DynamoDB tables.
+---
+- Cloudfront - Field-level encryption :  The sensitive information provided by your clients is encrypted at the edge closer to the user and remains encrypted throughout your entire application stack, ensuring that only applications that need the data—and have the credentials to decrypt it—are able to do so.
+- EC2 instances in an EMR cluster are organized into node types. There are three: the master node, the core node, and task nodes.
+- EMR : The collection of EC2 instances that host each node type is called either an instance fleet or a uniform instance group. The instance fleets or uniform instance groups configuration is a choice you make when you create a cluster (cant change after)
+- Aurora : all DB instances in a multi-master cluster must be in the same AWS Region and you can’t enable cross-region replicas from multi-master clusters
+- RDS Multi-AZ deployments does is synchronous replication.
+- auto healing exists in opswork
+- AWS Systems Manager Maintenance Windows which lets you define a schedule
+- CodeDeploy permet de déployer sur des machines on-prem
+- Beanstalk ne permet pas de déployer sur des machines on-prem
+- AWS SAM is an extension of AWS CloudFormation, you get the reliable deployment capabilities of AWS CloudFormation
+- You can also use AWS CodeStar to get started with a project structure, code repository, and a CI/CD pipeline that’s automatically configured for you
+- Amazon S3 Select can only retrieve a subset of data using SQL statements
+-  tape gateway in AWS Storage Gateway service is primarily used as an archive solution.
+- Proxy Protocol, when enabled on the ELB, allows the application server to access the original client IP address even behind the load balancer. This is crucial for recording client IPs.
+- AWS Data Pipeline to poll for tasks and then performs those tasks using Task Runner
+- AWS Server Migration Service allows you to automate, schedule, and track incremental replications of live server volumes, making it easier for you to coordinate large-scale server migrations.
+- VM Import/Export permet de déployer des VMs on-prem depuis AWS
+- Elastic Cache : If you require data durability, you can enable the Redis append-only file feature (AOF). When this feature is enabled, the node writes all of the commands that change cache data to an append-only file. When a node is rebooted and the cache engine starts, the AOF is “replayed”; the result is a warm Redis cache with all of the data intact.
+- AWS Config detection -> Event bridge -> lambda
+- ASG health check type can be of type ELB
+- Amazon Redshift workload management (WLM) enables users to flexibly manage priorities within workloads so that short, fast-running queries won’t get stuck in queues behind long-running queries
+- An in-place upgrade involves performing application updates on live Amazon EC2 instances. A disposable upgrade, on the other hand, involves rolling out a new set of EC2 instances by terminating older instances.
+- An Internet gateway is not required to establish a hardware VPN connection.
+- AWS AppSync is recommended for applications that are written for GraphQL APIs, not REST APIs.
