@@ -11,7 +11,7 @@
 - Amazon Connect : Central d'appel as a service
 - Amazon Pinpoint est un service de communication marketing flexible et évolutif qui vous connecte avec vos clients par e-mail, SMS, notifications push
 - built-in time series analytics : utiliser TimeStreams
-- You can use WorkSpaces to provision virtual desktops for users.
+- You can use WorkSpaces to provision virtual desktops for users
 - AWS Step Functions can help coordinate a series of Lambda functions in a specific order. Multiple functions can be invoked sequentially, passing the output of one to the other, and/or in parallel, while the state is being maintained by Step Functions.
 - Export logs from Cloudwatch to S3 can take up to 12hours
 - GuardDuty can automatically respond to threats by taking actions such as blocking IP addresses, disabling IAM users, or sending notifications to you with the help of services like Lambda, Eventbridge, etc.
@@ -115,14 +115,14 @@ Cloufront can target API Gateway?
 - Amazon Transcribe is an AWS service that makes it easy for customers to convert speech to text.
 - AWS IQ is a freelancing platform that provides hands-on help from AWS experts
 - Amazon AppFlow : sync SaaS applications like Salesforce, SAP, Zendesk, Slack, and ServiceNow, and AWS services
-- Amazon SageMaker build and train machine learning models
-- Amazon SageMaker : integrated Jupyter notebook instance
-- AWS Proton : A managed delivery service for deploying container and serverless applications
+- Amazon SageMaker build and train machine learning models.
+- Amazon SageMaker : integrated Jupyter notebook instance.
+- AWS Proton : A managed delivery service for deploying container and serverless applications.
 - Conditional forwarder = conf DNS AD pas route53 - équivalent avec AWS outbound resolver : forwarding rule
 - Import a certificate from a third-party certificate authority into ACM or the IAM certificate store
-- OpenSearch : un fork d'Elasticsearch et de Kibana
+- OpenSearch : un fork d'Elasticsearch et de Kibana.
 - ACM : you can generate public or private SSL/TLS certificates that you can use to secure your site.
-- Amazon RDS database does not support Oracle RAC
+- Amazon RDS database does not support Oracle RAC.
 - You can attach all your hybrid connectivity (VPN and Direct Connect connections) to a single Transit Gateway
 - Transit Gateway enables customers to connect thousands of VPCs
 - Transit Gateways within an AWS Region cannot be peered
@@ -182,84 +182,84 @@ Cloufront can target API Gateway?
 - You can’t use Amazon Quicksight to query data lakes from AWS Lake Formation. 
 - API Gateway peut s'intégrer avec SQS (anti pattern lors d'usage real time, les messages n'étant pas traités dans l'ordre)
 - Amazon EMR clusters can read and process Amazon Kinesis streams directly
-- Dynamodb supports document stores such as JSON, XML, or HTML in these data types.
-- DocumentDb does not offer a native cross-region replication or multi-region operation. You can only automate snapshots to another region which can take some time to restore in the event of regional failure.
-- s3  there is a delay of up to 15 minutes in Cross-Region Replication.
-- Amazon S3 will reject any requests made over HTTP when using SSE-C.
+- Dynamodb supports document stores such as JSON, XML, or HTML in these data types
+- DocumentDb does not offer a native cross-region replication or multi-region operation. You can only automate snapshots to another region which can take some time to restore in the event of regional failure
+- s3  there is a delay of up to 15 minutes in Cross-Region Replication
+- Amazon S3 will reject any requests made over HTTP when using SSE-C
 - PowerUserAccess permet de creer des service link roles
 - Import de CMK dans KMS gen dans on-prem HSM : prerequis: creer dans KMS CMK with no key materials and EXTERNAL origin
 - S3 bucket policy : aws:SourceIp n'est valable que pour les IP publiques 
-- EFS has file locking capabilities, it does not have file versioning features.
-- Amazon EventBridge cannot directly invoke AWS Fargate tasks.
+- EFS has file locking capabilities, it does not have file versioning features
+- Amazon EventBridge cannot directly invoke AWS Fargate tasks
 - AWS Step Function can be trigger for Amazon EventBridge
 - AWS Audit Manager is used to map compliance requirements to AWS usage data with prebuilt and custom frameworks and automated evidence collection
-- AWS Step Functions offers built-in mechanisms for error handling and retry policies, which are essential for managing failures in any of the workflow steps.
-- Migration Evaluator (formerly TSO Logic) is a migration assessment service that customers can request a business case from when considering to move on-premise workloads to the cloud. The service helps identify the least expensive deployment and purchasing options and helps predict future-state cloud costs.
+- AWS Step Functions offers built-in mechanisms for error handling and retry policies, which are essential for managing failures in any of the workflow steps
+- Migration Evaluator (formerly TSO Logic) is a migration assessment service that customers can request a business case from when considering to move on-premise workloads to the cloud. The service helps identify the least expensive deployment and purchasing options and helps predict future-state cloud costs
 - AWS Trusted Advisor is primarily used to check if your cloud infrastructure is in compliance with the best practices and recommendations across five categories: cost optimization, security, fault tolerance, performance, and service limits
-- AWS VPN CloudHub allows to connect your on-premises network to multiple VPCs in different AWS Regions using a central hub configuration.
+- AWS VPN CloudHub allows to connect your on-premises network to multiple VPCs in different AWS Regions using a central hub configuration
 - AWS Application Migration Service (MGN) is a highly automated lift-and-shift (rehost) solution 
 - By default, the burst concurrency for Lambda functions is between 500-3000 requests per second (depending on region)
-- AWS Amplify Console offers a simple Git-based workflow for building and deploying static web apps to AWS. 
+- AWS Amplify Console offers a simple Git-based workflow for building and deploying static web apps to AWS
 - Alexa for Business gives you the tools you need to manage Alexa devices, enroll your users, and assign skills at scale for your organization
 - Amazon Rekognition is used to identify persons on photos or videos
-- OpenSearch is a fully open-source search and analytics engine for use cases such as log analytics, real-time application monitoring, and clickstream analysis.
+- OpenSearch is a fully open-source search and analytics engine for use cases such as log analytics, real-time application monitoring, and clickstream analysis
 - Neptune DB is designed for graph application and loading CSV formatted data.
-- Amazon Kinesis Data Firehose has a feature to buffer data and supports data transformation in near-real-time.
+- Amazon Kinesis Data Firehose has a feature to buffer data and supports data transformation in near-real-time
 - Amazon Kinesis Data Stream offer longer-term, durable storage
-- You cannot set Auto Scaling for the master database on Amazon Aurora. You can only manually resize the instance size of the master node.
+- You cannot set Auto Scaling for the master database on Amazon Aurora. You can only manually resize the instance size of the master node
 - Aurora : scaling sur les replicas uniquement
 - Amazon Aurora does not need to replay the redo log from the last database checkpoint (typically five minutes) so restart is very fast
 - Amazon RDS Proxy instance maintains a pool of established connections to your RDS database instances, reducing the stress on database compute and memory resources that typically occurs when new connections are established.
 - With RDS Proxy, you can build applications that can transparently tolerate database failures without needing to write complex failure-handling code. The proxy automatically routes traffic to a new database instance while preserving application connections. It also bypasses Domain Name System (DNS) caches to reduce failover times by up to 66% for Aurora Multi-AZ databases
 - Optimized Reads and Optimized Writes exists in Amazon RDS
-- You can use Glacier Select to perform filtering operations using simple Structured Query Language (SQL).
+- You can use Glacier Select to perform filtering operations using simple Structured Query Language (SQL)
 - ASG porte une fonction "Scheduled scaling" intégrée 
 - AWS Application Migration Service (MGN) is a highly automated lift-and-shift (rehost) solution
 - Amazon Redshift only has cross-region backup feature (using snapshots), not Cross-Region Replication. Redshift can't replicate to another Redshift cluster 
 - There are a lot of features in IBM MQ that are not available in Amazon SQS
 ---
-- AWS Batch is designed to easily and efficiently run hundreds of thousands of batch computing jobs on AWS but not with Lambda functions.
+- AWS Batch is designed to easily and efficiently run hundreds of thousands of batch computing jobs on AWS but not with Lambda functions
 - By reserving your read and write capacity units ahead of time, you realize significant cost savings compared to on-demand provisioned throughput settings
 - AppSync supports real-time chat applications
-- With managed GraphQL subscriptions, AWS AppSync can push real-time data updates over Websockets to millions of clients. 
+- With managed GraphQL subscriptions, AWS AppSync can push real-time data updates over Websockets to millions of clients
 - It is possible to write TypeScript or Python code that will define AWS resources. Convert these codes to AWS CloudFormation templates by using AWS Cloud Development Kit (AWS CDK)
 - Consided billing - only work if both accounts match the same AZ
-- EC2Rescue can help you diagnose and troubleshoot problems on Amazon EC2 Linux and Windows Server instances.
+- EC2Rescue can help you diagnose and troubleshoot problems on Amazon EC2 Linux and Windows Server instances
 - It is possible to configure the database tier to use sharding, which will distribute the incoming load to multiple RDS MySQL instances.
-- An Internet gateway is not required to establish a hardware VPN connection.
-- AWS AppSync is recommended for applications that are written for GraphQL APIs, not REST APIs.
+- An Internet gateway is not required to establish a hardware VPN connection
+- AWS AppSync is recommended for applications that are written for GraphQL APIs, not REST APIs
 - Amazon API gateway - possibility to switch from regional to edge endpoints ( improve performances )
 - Amazon S3 Transfer Acceleration on the S3 bucket permet d'accélérer les uploads
 - When using AWS Lambda, initializing the database connection outside the event handler leverages Lambda’s ability to reuse containers for multiple invocation
 - Consider using least outstanding requests (LOR) when the requests for your application vary in complexity or your targets vary in processing capability
-- is not possible to update the deployment type of the FSx file system once it is created.
+- is not possible to update the deployment type of the FSx file system once it is created
 - Amazon FSx can be mono or multi AZ
 - if you want to sync an SMB to the AWS cloud. AWS DataSync offers a managed service that is designed for copying data from SMB shares to AWS
-- Apache Parquet is an open-source file format that is optimized for use with big data processing frameworks. It stores data in a columnar format, which means it organizes the data by columns rather than by rows. This can lead to significant performance improvements when executing analytical queries.
+- Apache Parquet is an open-source file format that is optimized for use with big data processing frameworks. It stores data in a columnar format, which means it organizes the data by columns rather than by rows. This can lead to significant performance improvements when executing analytical queries
 -  AWS Glue is a fully managed extract, transform, and load (ETL) service that makes it easy to prepare and load your data for analytics
 - RAM can share TGW
 - AWS AppSync ne s'intègre pas directement à Lambda
 - S3 Replication Time Control (S3 RTC) helps you meet compliance or business requirements for data replication and provides visibility into Amazon S3 replication times
-- S3 RTC replicates most objects that you upload to Amazon S3 in seconds and 99.99 percent of those objects within 15 minutes.
-- S3 replication can sometimes take a couple of hours.
-- AWS Elemental MediaConvert is a new file-based video transcoding service aimed to replace Amazon Elastic Transcoder.
+- S3 RTC replicates most objects that you upload to Amazon S3 in seconds and 99.99 percent of those objects within 15 minutes
+- S3 replication can sometimes take a couple of hours
+- AWS Elemental MediaConvert is a new file-based video transcoding service aimed to replace Amazon Elastic Transcoder
 - AWS Budgets can be cross account using organization
-- Glue crawlers are automated data discovery tools that scan a data source to classify, group, and catalog the data within it automatically.
--  Lambda functions do not, and cannot, have public IP addresses. 
+- Glue crawlers are automated data discovery tools that scan a data source to classify, group, and catalog the data within it automatically
+-  Lambda functions do not, and cannot, have public IP addresses
 - GW load balancer -> TG -> ASG est une archi possible 
 - Amazon WorkSpaces allows you to control which IP addresses your WorkSpaces can be accessed from
 - Route 53 health check can uses Amazon SNS to invoke the Lambda function in case of any issues
 - you can configure CloudFront to return a custom error page
 - Use origin failover to designate a primary origin for CloudFront plus a second origin that CloudFront automatically switches to when the primary origin returns specific HTTP status code failure responses.
-- You can add a lifecycle hook to your Auto Scaling group so that you can perform custom actions when instances launch or terminate.
+- You can add a lifecycle hook to your Auto Scaling group so that you can perform custom actions when instances launch or terminate
 - OpsCenter is more oriented towards incident management rather than an operational activity like capturing logs
 ---
-- RDS Data API is designed to be used for Aurora Serverless service, not for RDS instances. 
+- RDS Data API is designed to be used for Aurora Serverless service, not for RDS instances
 - Cost & Usage Reports can be integrate with Amazon Athena, Redshift et Quicksight
 - AWS Migration Hub helps you understand your IT environment by letting you explore information stored in the AWS Application Discovery Service repository
 - AWS Systems Manager Explorer is a customizable operations dashboard that reports information about your actual AWS resources (e.g., Amazon EC2, Amazon RDS, etc.)
 - AWS Data Pipeline can load data from S3 to RDS
-- AWS DataSync can facilitate the copying of data from on-premises data stores to the AWS cloud, but it can’t be used to replicate an on-premises database to AWS.
+- AWS DataSync can facilitate the copying of data from on-premises data stores to the AWS cloud, but it can’t be used to replicate an on-premises database to AWS
 - AWS Well-Architected Tool allows you to monitor the status of multiple workloads across your organization and helps you understand potential risks
 - CodeGuru : code review and performance optimization
 - AWS Trusted Advisor is a service that gives guidance in provisioning resources that follows AWS best practices
@@ -267,26 +267,26 @@ Cloufront can target API Gateway?
 - Amazon Forecast, a service that uses machine learning to generate precise time-series predictions
 - serverless caching, which automatically scales a Redis cluster is possible with ElasticCache
 - AWS Step Functions with Map and Parallel states can indeed help break down tasks into smaller parts
-- Amazon Aurora cloning allows you to create a new cluster that uses the same Aurora cluster volume and has the same data as the original.
+- Amazon Aurora cloning allows you to create a new cluster that uses the same Aurora cluster volume and has the same data as the original
 - Amazon Aurora can be share in RAM (for a source/destination in a same region, aurora cloning is faster than snapshot copy)
-- EKS Distro is a Kubernetes distribution built and powered by Amazon EKS managed, allowing you to deploy secure and reliable Kubernetes clusters in any environment. (opensource)
-- Amazon S3 Storage Lens is a cloud-storage analytics feature that you can use to gain organization-wide visibility into object-storage usage and activity.
+- EKS Distro is a Kubernetes distribution built and powered by Amazon EKS managed, allowing you to deploy secure and reliable Kubernetes clusters in any environment (opensource)
+- Amazon S3 Storage Lens is a cloud-storage analytics feature that you can use to gain organization-wide visibility into object-storage usage and activity
 -  Storage Class Analysis can help in optimizing storage costs by suggesting what objects to move between storage classes
 - AWS DirectConnect gateway require to set prefix lists
-- AWS Migration Hub, which offers data exploration features integrated with Amazon Athena.
+- AWS Migration Hub, which offers data exploration features integrated with Amazon Athena
 - S3 Select is simply used to retrieve specific subsets of data from within an S3 object
 - Cloudformation stackset - automatic deployment possible at organization level
-- Security Hub has integration with Organizations, so you can use one single Security Hub dashboard to monitor for both security issues in one place.
-- Audit Manager to automate evidence collection and to provide continuous auditing and compliance.
-- Timestream can be up to a thousand times faster than a relational database.
--  Timestream can periodically and automatically schedule queries to perform real-time analytics on incoming data.
--  resource-based policies are not available for DynamoDB tables.
+- Security Hub has integration with Organizations, so you can use one single Security Hub dashboard to monitor for both security issues in one place
+- Audit Manager to automate evidence collection and to provide continuous auditing and compliance
+- Timestream can be up to a thousand times faster than a relational database
+-  Timestream can periodically and automatically schedule queries to perform real-time analytics on incoming data
+-  resource-based policies are not available for DynamoDB tables
 ---
-- Cloudfront - Field-level encryption :  The sensitive information provided by your clients is encrypted at the edge closer to the user and remains encrypted throughout your entire application stack, ensuring that only applications that need the data—and have the credentials to decrypt it—are able to do so.
-- EC2 instances in an EMR cluster are organized into node types. There are three: the master node, the core node, and task nodes.
+- Cloudfront - Field-level encryption :  The sensitive information provided by your clients is encrypted at the edge closer to the user and remains encrypted throughout your entire application stack, ensuring that only applications that need the data—and have the credentials to decrypt it—are able to do so
+- EC2 instances in an EMR cluster are organized into node types. There are three: the master node, the core node, and task nodes
 - EMR : The collection of EC2 instances that host each node type is called either an instance fleet or a uniform instance group. The instance fleets or uniform instance groups configuration is a choice you make when you create a cluster (cant change after)
 - Aurora : all DB instances in a multi-master cluster must be in the same AWS Region and you can’t enable cross-region replicas from multi-master clusters
-- RDS Multi-AZ deployments does is synchronous replication.
+- RDS Multi-AZ deployments does is synchronous replication
 - auto healing exists in opswork
 - AWS Systems Manager Maintenance Windows which lets you define a schedule
 - CodeDeploy permet de déployer sur des machines on-prem
@@ -294,15 +294,47 @@ Cloufront can target API Gateway?
 - AWS SAM is an extension of AWS CloudFormation, you get the reliable deployment capabilities of AWS CloudFormation
 - You can also use AWS CodeStar to get started with a project structure, code repository, and a CI/CD pipeline that’s automatically configured for you
 - Amazon S3 Select can only retrieve a subset of data using SQL statements
--  tape gateway in AWS Storage Gateway service is primarily used as an archive solution.
-- Proxy Protocol, when enabled on the ELB, allows the application server to access the original client IP address even behind the load balancer. This is crucial for recording client IPs.
+-  tape gateway in AWS Storage Gateway service is primarily used as an archive solution
+- Proxy Protocol, when enabled on the ELB, allows the application server to access the original client IP address even behind the load balancer. This is crucial for recording client IPs
 - AWS Data Pipeline to poll for tasks and then performs those tasks using Task Runner
-- AWS Server Migration Service allows you to automate, schedule, and track incremental replications of live server volumes, making it easier for you to coordinate large-scale server migrations.
+- AWS Server Migration Service allows you to automate, schedule, and track incremental replications of live server volumes, making it easier for you to coordinate large-scale server migrations
 - VM Import/Export permet de déployer des VMs on-prem depuis AWS
-- Elastic Cache : If you require data durability, you can enable the Redis append-only file feature (AOF). When this feature is enabled, the node writes all of the commands that change cache data to an append-only file. When a node is rebooted and the cache engine starts, the AOF is “replayed”; the result is a warm Redis cache with all of the data intact.
+- Elastic Cache : If you require data durability, you can enable the Redis append-only file feature (AOF). When this feature is enabled, the node writes all of the commands that change cache data to an append-only file. When a node is rebooted and the cache engine starts, the AOF is “replayed”; the result is a warm Redis cache with all of the data intact
 - AWS Config detection -> Event bridge -> lambda
 - ASG health check type can be of type ELB
 - Amazon Redshift workload management (WLM) enables users to flexibly manage priorities within workloads so that short, fast-running queries won’t get stuck in queues behind long-running queries
-- An in-place upgrade involves performing application updates on live Amazon EC2 instances. A disposable upgrade, on the other hand, involves rolling out a new set of EC2 instances by terminating older instances.
-- An Internet gateway is not required to establish a hardware VPN connection.
-- AWS AppSync is recommended for applications that are written for GraphQL APIs, not REST APIs.
+- An in-place upgrade involves performing application updates on live Amazon EC2 instances. A disposable upgrade, on the other hand, involves rolling out a new set of EC2 instances by terminating older instances
+- An Internet gateway is not required to establish a hardware VPN connection
+- AWS AppSync is recommended for applications that are written for GraphQL APIs, not REST APIs
+---
+- Snowball edge : You cannot export data directly from S3 Glacier. It should be first restored to S3
+- You can use DataSync to copy data from on-prem over AWS Direct Connect or Internet links to AWS
+- DMS allows you to stream data to Amazon Redshift from any of the supported sources including Amazon Aurora, PostgreSQL, MySQL, MariaDB, Oracle, SAP ASE, and SQL Server
+- Amazon Cognito supports enterprise identity providers such as Microsoft Active Directory using SAML
+- AWS CodePipeline actions occur in a specified order, in serial or in parallel, as determined in the configuration of the stage
+- With AWS IAM Identity Center, you can assign permissions based on the group membership in your IdP’s directory
+- AWS IAM allows you to enable a separate SAML 2.0 or an Open ID Connect (OIDC) IdP for each AWS account you manage and use federated user attributes for access control.
+- For convenience, use Amazon Cognito as your identity broker for almost all web identity federation scenario
+- CloudFront - The proportion of requests that are served from caches to all requests is called the cache hit ratio
+- Solutions to improve your cache hit ratio:
+  - Increase the duration that your objects stay cached in CloudFront edge locations. You can configure your origin to add a Cache-Control max-age header to your objects, and specify the longest practical value for max-age. The shorter the cache duration, the more frequently CloudFront checks if the object has changed to get the latest version
+  - Configure CloudFront to forward only the query string parameters for which your origin will return unique objects
+  - Configure CloudFront to forward only specific cookies instead of all cookies to your origin. Create separate cache behaviors for static and dynamic content, and forward cookies to your origin only for dynamic content
+  - Configure CloudFront to forward and cache objects based on specific headers only instead of forwarding and caching objects based on all headers
+  - Remove Accept-Encoding Header when compression is not needed. When you use this configuration, CloudFront removes the header from the cache key and doesn’t include the header in origin requests
+---
+- You can use latency and weighted records in Amazon Route 53 together
+- Step Functions : A workflow is a series of steps, with the output of one step acting as input into the next step (In Step Functions, we refer to the workflow as State machines)
+- EC2ThrottledException est le message d'erreur en limitation d'IP
+- Nom du LLM de AWS : Titan
+- You can only use SCPs if you have enabled all features in your AWS Organization
+- If you are using AWS Managed Microsoft AD Directory, you can share this directory to other VPCs and AWS accounts **within the same Region**
+- CloudFormation : stacksets can be deployed to your entire organization or specific OUs
+- Products created in Service Catalog are **regional**
+- Transit Gateway supports both Static and BGP-based Dynamic VPN connections
+- After you create a set of DHCP options, you can't modify them
+- DHCP option sets for your VPCs -> passer une conf DNS aux VMs
+- AmazonProvidedDNS is an Amazon Route 53 Resolver server, and this option enables DNS for instances that need to communicate over the VPC's Internet gateway.
+- Si le serveur DNS d'une EC2 est on-prem, pour permettre à l'EC2 de résoudre des ressources privées Amazon, définir dans le serveur DNS on-prem forward les requêtes vers un inbound endpoint.
+- Appstream require HTML5.
+
