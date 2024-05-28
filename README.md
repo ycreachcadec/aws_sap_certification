@@ -342,3 +342,4 @@ Cloufront can target API Gateway?
 - 2 solutions to migrate an on-premises ELK stack to AWS:
   - Create Amazon OpenSearch domain in AWS -> Use DMS to migrate from on-prem database (Postgre, Mysql, Mongodb... ) to OpenSarch
   - Export your data and indexes from your existing Elasticsearch. Then import it into your new OpenSearch cluster 
+- use **CloudWatch Logs subscriptions** to gain access to a real-time feed of log events from CloudWatchLogs and have it delivered to other services such as an Amazon Kinesis stream, an Amazon Data Firehose, or AWS Lambda.
