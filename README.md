@@ -338,4 +338,7 @@ Cloufront can target API Gateway?
 - Si le serveur DNS d'une EC2 est on-prem, pour permettre à l'EC2 de résoudre des ressources privées Amazon, définir dans le serveur DNS on-prem forward les requêtes vers un inbound endpoint.
 - Appstream require HTML5.
 - Orgin Cloudfront possibe : API Gateway
-- AWS Transfer Family ( FTP / SFTP / FTPS ) transfer data **in and out** of S3 
+- AWS Transfer Family ( FTP / SFTP / FTPS ) transfer data **in and out** of S3
+- 2 solutions to migrate an on-premises ELK stack to AWS:
+  - Create Amazon OpenSearch domain in AWS -> Use DMS to migrate from on-prem database (Postgre, Mysql, Mongodb... ) to OpenSarch
+  - Export your data and indexes from your existing Elasticsearch. Then import it into your new OpenSearch cluster 
