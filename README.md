@@ -338,3 +338,4 @@ Cloufront can target API Gateway?
 - Si le serveur DNS d'une EC2 est on-prem, pour permettre à l'EC2 de résoudre des ressources privées Amazon, définir dans le serveur DNS on-prem forward les requêtes vers un inbound endpoint.
 - Appstream require HTML5.
 - Orgin Cloudfront possibe : API Gateway
+- AWS Transfer Family ( FTP / SFTP / FTPS ) transfer data **in and out** of S3 
