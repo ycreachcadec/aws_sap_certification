@@ -337,4 +337,4 @@ Cloufront can target API Gateway?
 - AmazonProvidedDNS is an Amazon Route 53 Resolver server, and this option enables DNS for instances that need to communicate over the VPC's Internet gateway.
 - Si le serveur DNS d'une EC2 est on-prem, pour permettre à l'EC2 de résoudre des ressources privées Amazon, définir dans le serveur DNS on-prem forward les requêtes vers un inbound endpoint.
 - Appstream require HTML5.
-
+- Orgin Cloudfront possibe : API Gateway
