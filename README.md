@@ -6,7 +6,7 @@
 - Cloudformation stack policy can prevent stack resources from being unintentionally updated or deleted during a stack update. Stack Policy only applies for Stack updates and not stack deletion
 - Amazon WorkSpaces provides a virtual workspace for varied worker types, especially hybrid and remote workers
 - Amazon OpenSearch est le successeur du service ElasticSearch
-- AmazonOpensearch = OpenSearch managé 
+- AmazonOpensearch = Stack ELK full managé
 - AmazonOpensearch a une GUI pour afficher des dashboards (Intégrable avec Cognito ou SAML)
 - Amazon Connect : Central d'appel as a service
 - Amazon Pinpoint est un service de communication marketing flexible et évolutif qui vous connecte avec vos clients par e-mail, SMS, notifications push
