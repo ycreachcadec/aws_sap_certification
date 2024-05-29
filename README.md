@@ -343,3 +343,21 @@ Cloufront can target API Gateway?
   - Create Amazon OpenSearch domain in AWS -> Use DMS to migrate from on-prem database (Postgre, Mysql, Mongodb... ) to OpenSarch
   - Export your data and indexes from your existing Elasticsearch. Then import it into your new OpenSearch cluster 
 - use **CloudWatch Logs subscriptions** to gain access to a real-time feed of log events from CloudWatchLogs and have it delivered to other services such as an Amazon Kinesis stream, an Amazon Data Firehose, or AWS Lambda.
+---
+- AWS AppSync supports AWS Lambda, Amazon Aurora Serverless, Amazon DynamoDB, Amazon Elasticsearch, and HTTP endpoints as data sources.
+- Automatically synchronize data between mobile/web apps and the cloud with AWS AppSync and AWS
+Amplify DataStore.
+- CloudWatch Logs Subscription cross account : only possible destination source is Kinesis Streams
+- AWS Data Sync is a data transfer service that automates moving data between on-premises storage and Amazon S3, Amazon EFS, or Amazon FSx for Windows File Server.
+- application management service that makes it easy to deploy and operate applications of all types and sizes.
+- AWS OpsWorks is an application management service that makes it easy to deploy and operate applications of all types and sizes.
+- Redshift a la feature cross region snapshot copy ( /!\ snapshot copy grant nécessaire si clé KMS ) 
+- CloudFront supports the WebSocket protocol as well as the HTTP protocol
+- AWS Fargate is not available on AWS Outposts, and Amazon ECS Anywhere isn’t designed to run on AWS Outposts:
+- The blue environment represents the current application while the green represents the new one.
+- a multivalue answer routing policy may cause the users to be randomly sent to other healthy regions that may be far away from the user’s location.
+- you still need to create a read-replica for the high availability of the Aurora DB instance. A single read-replica is enough to quickly recover the database in case the primary instance fails. ( HIGH availability in Aurora = read-replicas. Différent de RDS /!\ )
+- AWS MGN supports syncing of attached volumes as well (replication agent required
+- inventaire CMDB -> demander à AWS un import dans Migration Evaluator
+- EFS Max I/O mode scaling is done with a tradeoff of slightly higher latencies for file metadata operations.
+
